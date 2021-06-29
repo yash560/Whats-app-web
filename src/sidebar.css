@@ -1,0 +1,231 @@
+.sidebarwhole{
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.sidebarHeader{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    background-color: rgb(230, 230, 230);
+border-right: 2px solid rgb(180, 178, 178);
+}
+.avatardiv{
+    width: 50%;
+    /* display: grid;
+    place-items: center; */
+    height: 100%;
+
+}
+.avatarinside{
+    height: 100%;
+    width: 50%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center; 
+}
+.avatarinsidemain{
+    background-color: rgb(204, 193, 193);
+
+border-radius: 50%;
+}
+.userphoto{
+  border-radius: 50%;
+}
+.headerRightDiv{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.refreshDiv,.messageicondiv,.menudiv{
+    width: 33.3%;
+    height: 100%;
+    display: grid;
+    color: rgb(184, 179, 179);
+    place-items: center; 
+}
+.refreshDiv{
+    background-color: transparent;
+
+}
+.messageicondiv{
+    background-color: transparent;
+
+}
+@media(max-width:570px){
+    .sidebarwhole{
+        background-color: white;
+       
+    }
+    .avatarinside{
+        margin-left: 1rem;
+    }
+       .refreshDiv{
+        display: none;
+    
+    }
+    .messageicondiv{
+        display: none;
+    
+    }
+    .menudiv{
+        margin-right: -1rem;
+    }
+    .serachmainDiv{
+        height: 20px;
+        display: grid;
+        place-items: center; 
+        background-color: rgb(230, 224, 224);
+    }
+   .fa-search{
+       display: none;
+   }
+      
+}
+
+.menudiv{
+    background-color: transparent;
+
+}
+.fa-redo{
+    padding: 10px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.sidebarsearch{
+font-size: small;
+color: rgb(194, 193, 193);
+}
+.fa-comment-alt{
+    padding: 10px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.fa-ellipsis-v{
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.fa-redo:active ,.fa-comment-alt:active ,.fa-ellipsis-v:hover{
+background-color: rgb(216, 211, 211);
+}
+
+
+.menuIcon {
+    position: relative;
+    display: inline-block;
+  }
+  .fas{
+    cursor: pointer;
+  }
+  .home{
+    text-decoration: none;
+    outline: none;
+  }
+  /* .darkmode{
+    color: rgb(32, 32, 32);
+    cursor: pointer;
+  } */
+  .menuIcon-Div {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    z-index:13;
+    height: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .menuIcon:hover .menuIcon-Div {
+    display: block;
+  }
+  .serachmainDiv{
+      height: 40px;
+      display: grid;
+      place-items: center; 
+      background-color: rgb(230, 224, 224);
+  }
+  ::-webkit-input-placeholder {
+    color: rgb(212, 204, 204);
+    font-size: x-small; font-weight: bolder;  
+  }
+  
+  :-ms-input-placeholder { 
+    color: rgb(212, 204, 204);  font-weight: bolder;   font-size: x-small;
+}
+  
+  ::placeholder {
+    color: rgb(212, 204, 204);    font-weight: bolder;   font-size: x-small;
+
+  }
+  .serachmainDivinside{
+    background-color: white;
+    border-radius: 3rem;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+  }
+  .searchbutton{
+    background-color: transparent;
+    width: 10%;
+    margin-left: 10px;
+    display: grid;
+    place-items: center;
+  }
+  .searchinput{
+height: 25px;
+    background-color: transparent;
+border: transparent;
+width: 90%;
+outline: none;
+
+  }
+  .searchinput:active{
+    border: transparent;outline: none;
+
+      }
+      .searchinput:focus {
+        border: transparent;outline: none;
+
+          }
+          .searchinput:focus > .searchbutton{
+              margin-left: 100px;
+          }
+  .inputfield{
+    background-color: transparent;
+    width: 90%;
+ 
+  }
+  .searchin{
+
+  }
+  .sidebarchats{
+      overflow-y: scroll;
+      height: 100%;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+  }
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(202, 199, 199);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(175, 173, 173);
+  }
